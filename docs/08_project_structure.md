@@ -10,7 +10,7 @@ this drifts out of date, not two.
 ## Project structure
 
 ```
-workshop04/
+hackathon/
 ├── README.md
 ├── requirements.txt
 ├── .env.example
