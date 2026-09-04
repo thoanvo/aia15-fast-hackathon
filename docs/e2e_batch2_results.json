@@ -1,0 +1,670 @@
+[
+  {
+    "id": "TC-59",
+    "category": "11. Fixed Tool Coverage",
+    "question": "What are the top 5 products by revenue?",
+    "expected_tool": "get_top_products",
+    "expected_args": {
+      "limit": 5
+    },
+    "actual_tools": [
+      "get_top_products"
+    ],
+    "actual_args": {
+      "limit": 5
+    },
+    "elapsed": 17.48,
+    "passed": true,
+    "answer_snippet": "Here are the top 5 products by revenue:\n\n1. **Laptop:**\n   - Category: Electronics.\n   - Total Revenue: $244,800.\n   - Total Profit: $102,000.\n   - To..."
+  },
+  {
+    "id": "TC-60",
+    "category": "11. Fixed Tool Coverage",
+    "question": "What are the top 3 products by revenue in Europe?",
+    "expected_tool": "get_top_products",
+    "expected_args": {
+      "limit": 3,
+      "region": "Europe"
+    },
+    "actual_tools": [
+      "get_top_products"
+    ],
+    "actual_args": {
+      "limit": 3,
+      "region": "Europe"
+    },
+    "elapsed": 11.28,
+    "passed": true,
+    "answer_snippet": "The top 3 products by revenue in Europe are:\n\n1. **Tablet:**\n   - Category: Electronics.\n   - Total Revenue: $23,400.\n   - Total Profit: $9,900.\n   - ..."
+  },
+  {
+    "id": "TC-61",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Who are our top 5 customers by revenue?",
+    "expected_tool": "get_top_customers",
+    "expected_args": {
+      "limit": 5
+    },
+    "actual_tools": [
+      "get_top_customers"
+    ],
+    "actual_args": {
+      "limit": 5
+    },
+    "elapsed": 14.04,
+    "passed": true,
+    "answer_snippet": "Here are our top 5 customers by revenue:\n\n1. **Stark Traders:**\n   - Segment: Enterprise.\n   - Region: Asia.\n   - Total Revenue: $122,850.\n   - Total ..."
+  },
+  {
+    "id": "TC-62",
+    "category": "11. Fixed Tool Coverage",
+    "question": "How is each region performing in revenue and profit?",
+    "expected_tool": "get_region_performance",
+    "expected_args": {},
+    "actual_tools": [
+      "get_region_performance"
+    ],
+    "actual_args": {},
+    "elapsed": 11.24,
+    "passed": true,
+    "answer_snippet": "Here is the performance of each region in terms of revenue and profit:\n\n1. **Asia:**\n   - Total Revenue: $222,300.\n   - Total Profit: $93,450.\n   - Cu..."
+  },
+  {
+    "id": "TC-63",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Show the monthly sales trend.",
+    "expected_tool": "get_sales_trend",
+    "expected_args": {
+      "period": "month"
+    },
+    "actual_tools": [
+      "get_sales_trend"
+    ],
+    "actual_args": {
+      "period": "month"
+    },
+    "elapsed": 15.46,
+    "passed": true,
+    "answer_snippet": "Here is the monthly sales trend:\n\n1. **January 2024:**\n   - Total Revenue: $43,720.\n   - Total Profit: $18,540.\n   - Total Quantity Sold: 67.\n\n2. **Fe..."
+  },
+  {
+    "id": "TC-64",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Show the yearly sales trend for Asia.",
+    "expected_tool": "get_sales_trend",
+    "expected_args": {
+      "period": "year",
+      "region": "Asia"
+    },
+    "actual_tools": [
+      "get_sales_trend"
+    ],
+    "actual_args": {
+      "period": "year",
+      "region": "Asia"
+    },
+    "elapsed": 10.92,
+    "passed": true,
+    "answer_snippet": "The yearly sales trend for Asia is as follows:\n\n- **Year:** 2024\n  - **Total Revenue:** $222,300\n  - **Total Profit:** $93,450\n  - **Total Quantity So..."
+  },
+  {
+    "id": "TC-65",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Give me a profit analysis broken down by customer.",
+    "expected_tool": "get_profit_analysis",
+    "expected_args": {
+      "dimension": "customer"
+    },
+    "actual_tools": [
+      "get_profit_analysis"
+    ],
+    "actual_args": {
+      "dimension": "customer"
+    },
+    "elapsed": 12.12,
+    "passed": true,
+    "answer_snippet": "Here is the profit analysis broken down by customer:\n\n1. **Stark Traders:**\n   - Total Revenue: $122,850.00.\n   - Total Profit: $51,250.00.\n   - Profi..."
+  },
+  {
+    "id": "TC-66",
+    "category": "11. Fixed Tool Coverage",
+    "question": "What are our key business metrics?",
+    "expected_tool": "get_summary_kpi",
+    "expected_args": {},
+    "actual_tools": [
+      "get_summary_kpi"
+    ],
+    "actual_args": {},
+    "elapsed": 10.05,
+    "passed": true,
+    "answer_snippet": "Here are the key business metrics:\n\n- **Total Revenue:** $379,995.00\n- **Total Profit:** $161,440.00\n- **Profit Margin:** 42.48%\n- **Total Orders:** 7..."
+  },
+  {
+    "id": "TC-67",
+    "category": "11. Fixed Tool Coverage",
+    "question": "What was our KPI summary between 2025-01-01 and 2025-03-31?",
+    "expected_tool": "get_summary_kpi",
+    "expected_args": {
+      "date_from": "2025-01-01",
+      "date_to": "2025-03-31"
+    },
+    "actual_tools": [
+      "get_summary_kpi"
+    ],
+    "actual_args": {
+      "date_from": "2025-01-01",
+      "date_to": "2025-03-31"
+    },
+    "elapsed": 11.2,
+    "passed": true,
+    "answer_snippet": "The KPI summary between January 1, 2025, and March 31, 2025, is as follows:\n\n- **Total Revenue:** Not available.\n- **Total Profit:** Not available.\n- ..."
+  },
+  {
+    "id": "TC-68",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Which products sold the most units?",
+    "expected_tool": "get_top_products_by_quantity",
+    "expected_args": {
+      "limit": 5
+    },
+    "actual_tools": [
+      "get_top_products_by_quantity"
+    ],
+    "actual_args": {
+      "limit": 5
+    },
+    "elapsed": 9.22,
+    "passed": true,
+    "answer_snippet": "The top products sold by units are:\n\n1. **Laptop:**\n   - Category: Electronics.\n   - Total Units Sold: 204.\n   - Total Revenue: $244,800.00.\n\n2. **Pri..."
+  },
+  {
+    "id": "TC-69",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Which products are the most profitable?",
+    "expected_tool": "get_top_products_by_profit",
+    "expected_args": {
+      "limit": 5
+    },
+    "actual_tools": [
+      "get_top_products_by_profit"
+    ],
+    "actual_args": {
+      "limit": 5
+    },
+    "elapsed": 10.33,
+    "passed": true,
+    "answer_snippet": "The most profitable products are:\n\n1. **Laptop:**\n   - Total Profit: $102,000.\n   - Total Revenue: $244,800.\n   - Profit Margin: 41.67%.\n\n2. **Printer..."
+  },
+  {
+    "id": "TC-70",
+    "category": "11. Fixed Tool Coverage",
+    "question": "How do our product categories compare in revenue and profit?",
+    "expected_tool": "get_category_performance",
+    "expected_args": {},
+    "actual_tools": [
+      "get_category_performance"
+    ],
+    "actual_args": {},
+    "elapsed": 8.23,
+    "passed": true,
+    "answer_snippet": "Here is the comparison of our product categories in terms of revenue and profit:\n\n1. **Electronics:**\n   - Total Revenue: $369,870.\n   - Total Profit:..."
+  },
+  {
+    "id": "TC-71",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Which customer segment generates the most revenue?",
+    "expected_tool": "get_segment_performance",
+    "expected_args": {},
+    "actual_tools": [
+      "get_segment_performance"
+    ],
+    "actual_args": {},
+    "elapsed": 8.56,
+    "passed": true,
+    "answer_snippet": "The customer segment that generates the most revenue is the **Enterprise** segment, with a total revenue of **$233,850**. Here are the details for eac..."
+  },
+  {
+    "id": "TC-72",
+    "category": "11. Fixed Tool Coverage",
+    "question": "How does the Laptop perform across different regions?",
+    "expected_tool": "get_product_region_performance",
+    "expected_args": {
+      "product_name": "Laptop"
+    },
+    "actual_tools": [
+      "get_product_region_performance"
+    ],
+    "actual_args": {
+      "product_name": "Laptop"
+    },
+    "elapsed": 9.1,
+    "passed": true,
+    "answer_snippet": "The performance of the Laptop across different regions is as follows:\n\n1. **Asia:**\n   - Total Revenue: $198,000.\n   - Total Profit: $82,500.\n   - Tot..."
+  },
+  {
+    "id": "TC-73",
+    "category": "11. Fixed Tool Coverage",
+    "question": "What has Acme Corp purchased?",
+    "expected_tool": "get_customer_purchase_history",
+    "expected_args": {
+      "customer_name": "Acme Corp"
+    },
+    "actual_tools": [
+      "get_customer_purchase_history"
+    ],
+    "actual_args": {
+      "customer_name": "Acme Corp"
+    },
+    "elapsed": 11.0,
+    "passed": true,
+    "answer_snippet": "Acme Corp has made several purchases, primarily of printers. Here are the details of their purchases:\n\n1. **Printer:**\n   - **Sale Date:** June 15, 20..."
+  },
+  {
+    "id": "TC-74",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Which products have the weakest profit margins?",
+    "expected_tool": "get_low_margin_products",
+    "expected_args": {
+      "limit": 5
+    },
+    "actual_tools": [
+      "get_low_margin_products"
+    ],
+    "actual_args": {
+      "limit": 5
+    },
+    "elapsed": 11.77,
+    "passed": true,
+    "answer_snippet": "The products with the weakest profit margins are as follows:\n\n1. **Camera:**\n   - Category: Electronics.\n   - Total Revenue: $21,450.\n   - Total Profi..."
+  },
+  {
+    "id": "TC-75",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Summarize sales between 2025-01-01 and 2025-03-31.",
+    "expected_tool": "get_sales_by_date_range",
+    "expected_args": {
+      "date_from": "2025-01-01",
+      "date_to": "2025-03-31"
+    },
+    "actual_tools": [
+      "get_sales_by_date_range"
+    ],
+    "actual_args": {
+      "date_from": "2025-01-01",
+      "date_to": "2025-03-31"
+    },
+    "elapsed": 9.46,
+    "passed": true,
+    "answer_snippet": "There were no sales recorded between January 1, 2025, and March 31, 2025. All metrics, including order count, total quantity, total revenue, total pro..."
+  },
+  {
+    "id": "TC-76",
+    "category": "11. Fixed Tool Coverage",
+    "question": "What is our month-over-month revenue growth?",
+    "expected_tool": "get_month_over_month_growth",
+    "expected_args": {},
+    "actual_tools": [
+      "get_month_over_month_growth"
+    ],
+    "actual_args": {},
+    "elapsed": 12.34,
+    "passed": true,
+    "answer_snippet": "Here is the month-over-month revenue growth for the recent months:\n\n1. **January 2024:**\n   - Total Revenue: $43,720.\n   - Total Profit: $18,540.\n   -..."
+  },
+  {
+    "id": "TC-77",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Summarize repeat customers by region.",
+    "expected_tool": "get_repeat_customer_summary",
+    "expected_args": {},
+    "actual_tools": [
+      "get_repeat_customer_summary"
+    ],
+    "actual_args": {},
+    "elapsed": 8.76,
+    "passed": true,
+    "answer_snippet": "Here is the summary of repeat customers by region:\n\n1. **Asia:**\n   - Total Customers: 3.\n   - Repeat Customers: 3.\n\n2. **Europe:**\n   - Total Custome..."
+  },
+  {
+    "id": "TC-78",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Show the top 150 products by revenue.",
+    "expected_tool": "get_top_products",
+    "expected_args": {
+      "limit": 100
+    },
+    "actual_tools": [
+      "get_top_products",
+      "get_top_products"
+    ],
+    "actual_args": {
+      "limit": 100
+    },
+    "elapsed": 19.83,
+    "passed": true,
+    "answer_snippet": "Here are the top products by revenue:\n\n1. **Laptop:**\n   - Category: Electronics.\n   - Total Revenue: $244,800.00.\n   - Total Profit: $102,000.00.\n   ..."
+  },
+  {
+    "id": "TC-79",
+    "category": "11. Fixed Tool Coverage",
+    "question": "Show the top -5 products by revenue.",
+    "expected_tool": "get_top_products",
+    "expected_args": {},
+    "actual_tools": [
+      "get_top_products"
+    ],
+    "actual_args": {
+      "limit": 5
+    },
+    "elapsed": 13.13,
+    "passed": true,
+    "answer_snippet": "Here are the top 5 products by revenue:\n\n1. **Laptop:**\n   - Category: Electronics.\n   - Total Revenue: $244,800.\n   - Total Profit: $102,000.\n   - To..."
+  },
+  {
+    "id": "TC-80",
+    "category": "11. Fixed Tool Coverage",
+    "question": "What has NonexistentCustomerXYZ purchased?",
+    "expected_tool": "get_customer_purchase_history",
+    "expected_args": {
+      "customer_name": "NonexistentCustomerXYZ"
+    },
+    "actual_tools": [
+      "get_customer_purchase_history"
+    ],
+    "actual_args": {
+      "customer_name": "NonexistentCustomerXYZ"
+    },
+    "elapsed": 13.65,
+    "passed": true,
+    "answer_snippet": "NonexistentCustomerXYZ has not made any purchases."
+  },
+  {
+    "id": "TC-81",
+    "category": "12. Fixed Tool Feature Flag",
+    "scenario": "FIXED_TOOLS_ENABLED=true tool count",
+    "expected_count": 19,
+    "actual_count": 19,
+    "passed": true,
+    "tools_list": [
+      "get_top_products",
+      "get_top_customers",
+      "get_region_performance",
+      "get_sales_trend",
+      "get_profit_analysis",
+      "get_summary_kpi",
+      "get_top_products_by_quantity",
+      "get_top_products_by_profit",
+      "get_category_performance",
+      "get_segment_performance",
+      "get_product_region_performance",
+      "get_customer_purchase_history",
+      "get_low_margin_products",
+      "get_sales_by_date_range",
+      "get_month_over_month_growth",
+      "get_repeat_customer_summary",
+      "search_knowledge_base",
+      "sql_db_schema",
+      "answer_with_sql"
+    ]
+  },
+  {
+    "id": "TC-82",
+    "category": "12. Fixed Tool Feature Flag",
+    "scenario": "FIXED_TOOLS_ENABLED=false tool count",
+    "expected_count": 3,
+    "actual_count": 3,
+    "passed": true,
+    "tools_list": [
+      "search_knowledge_base",
+      "sql_db_schema",
+      "answer_with_sql"
+    ]
+  },
+  {
+    "id": "TC-83",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "Top 5 products by revenue.",
+    "flag_state": "ON",
+    "expected_tool": "get_top_products",
+    "actual_tools": [
+      "get_top_products"
+    ],
+    "elapsed": 14.39,
+    "passed": true,
+    "answer_snippet": "Here are the top 5 products by revenue:\n\n1. **Laptop:**\n   - Category: Electronics.\n   - Total Revenue: $244,800.\n   - Total Profit: $102,000.\n   - To..."
+  },
+  {
+    "id": "TC-84",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "Top 5 products by revenue.",
+    "flag_state": "OFF",
+    "expected_tool": "answer_with_sql",
+    "actual_tools": [
+      "search_knowledge_base",
+      "answer_with_sql"
+    ],
+    "elapsed": 49.95,
+    "passed": true,
+    "answer_snippet": "Here are the top 5 products by revenue:\n\n1. **Laptop:**\n   - Total Revenue: $244,800.00.\n   \n2. **Printer:**\n   - Total Revenue: $51,300.00.\n   \n3. **..."
+  },
+  {
+    "id": "TC-85",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "Top regions by distinct customer count.",
+    "flag_state": "ON",
+    "expected_tool": "answer_with_sql",
+    "actual_tools": [
+      "answer_with_sql"
+    ],
+    "elapsed": 22.52,
+    "passed": true,
+    "answer_snippet": "Here are the top regions by distinct customer count:\n\n1. **Asia:**\n   - Distinct Customer Count: 3.\n   \n2. **North America:**\n   - Distinct Customer C..."
+  },
+  {
+    "id": "TC-86",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "Top regions by distinct customer count.",
+    "flag_state": "OFF",
+    "expected_tool": "answer_with_sql",
+    "actual_tools": [
+      "answer_with_sql"
+    ],
+    "elapsed": 19.92,
+    "passed": true,
+    "answer_snippet": "Here are the top regions by distinct customer count:\n\n1. **Asia:**\n   - Distinct Customer Count: 3.\n   \n2. **North America:**\n   - Distinct Customer C..."
+  },
+  {
+    "id": "TC-87",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "What is the name of region 1?",
+    "flag_state": "ON",
+    "expected_tool": "answer_with_sql",
+    "actual_tools": [
+      "answer_with_sql"
+    ],
+    "elapsed": 17.86,
+    "passed": true,
+    "answer_snippet": "The name of region 1 is **North America**."
+  },
+  {
+    "id": "TC-88",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "What is the name of region 1?",
+    "flag_state": "OFF",
+    "expected_tool": "answer_with_sql",
+    "actual_tools": [
+      "answer_with_sql"
+    ],
+    "elapsed": 17.71,
+    "passed": true,
+    "answer_snippet": "The name of region 1 is **North America**."
+  },
+  {
+    "id": "TC-89",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "Show all customers.",
+    "flag_state": "ON",
+    "expected_tool": "answer_with_sql",
+    "actual_tools": [
+      "answer_with_sql"
+    ],
+    "elapsed": 21.11,
+    "passed": true,
+    "answer_snippet": "Here are all the customers:\n\n1. **Acme Corp:**\n   - Segment: Enterprise.\n   - Region: North America.\n\n2. **Globex Inc:**\n   - Segment: Enterprise.\n   ..."
+  },
+  {
+    "id": "TC-90",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "Show all customers.",
+    "flag_state": "OFF",
+    "expected_tool": "answer_with_sql",
+    "actual_tools": [
+      "answer_with_sql"
+    ],
+    "elapsed": 21.39,
+    "passed": true,
+    "answer_snippet": "Here are all the customers:\n\n1. **Acme Corp:**\n   - Customer ID: 1.\n   - Segment: Enterprise.\n   - Region: North America.\n\n2. **Globex Inc:**\n   - Cus..."
+  },
+  {
+    "id": "TC-91",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "What columns are available in the Customers table?",
+    "flag_state": "ON",
+    "expected_tool": "sql_db_schema",
+    "actual_tools": [
+      "sql_db_schema"
+    ],
+    "elapsed": 8.49,
+    "passed": true,
+    "answer_snippet": "The columns available in the **Customers** table are:\n\n- **customer_id**: SERIAL, NOT NULL (Primary Key).\n- **customer_name**: VARCHAR(150), NOT NULL...."
+  },
+  {
+    "id": "TC-92",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "What columns are available in the Customers table?",
+    "flag_state": "OFF",
+    "expected_tool": "sql_db_schema",
+    "actual_tools": [
+      "sql_db_schema"
+    ],
+    "elapsed": 8.42,
+    "passed": true,
+    "answer_snippet": "The columns available in the **Customers** table are:\n\n- **customer_id**: SERIAL, NOT NULL (Primary Key).\n- **customer_name**: VARCHAR(150), NOT NULL...."
+  },
+  {
+    "id": "TC-93",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "Top 10 products by profit.",
+    "flag_state": "ON",
+    "expected_tool": "get_top_products_by_profit",
+    "actual_tools": [
+      "get_top_products_by_profit"
+    ],
+    "elapsed": 12.17,
+    "passed": true,
+    "answer_snippet": "Here are the top 10 products by profit:\n\n1. **Laptop:**\n   - Total Profit: $102,000.00.\n   - Total Revenue: $244,800.00.\n   - Profit Margin: 41.67%.\n\n..."
+  },
+  {
+    "id": "TC-94",
+    "category": "12. Fixed Tool Feature Flag",
+    "question": "Products ranked by quantity.",
+    "flag_state": "ON",
+    "expected_tool": "get_top_products_by_quantity",
+    "actual_tools": [
+      "get_top_products_by_quantity"
+    ],
+    "elapsed": 11.48,
+    "passed": true,
+    "answer_snippet": "Here are the top products ranked by quantity sold:\n\n1. **Laptop:**\n   - Category: Electronics.\n   - Total Quantity: 204.\n   - Total Revenue: $244,800...."
+  },
+  {
+    "id": "Demo-01",
+    "category": "13. Demo Questions",
+    "question": "What were the top-selling products last quarter?",
+    "elapsed": 12.13,
+    "passed": true,
+    "chart_data_present": true,
+    "answer_snippet": "Here are the top-selling products from last quarter:\n\n1. **Laptop:**\n   - Category: Electronics.\n   - Total Revenue: $244,800.\n   - Total Profit: $102..."
+  },
+  {
+    "id": "Demo-02",
+    "category": "13. Demo Questions",
+    "question": "Which region generated the highest revenue?",
+    "elapsed": 8.23,
+    "passed": true,
+    "chart_data_present": true,
+    "answer_snippet": "The region that generated the highest revenue is:\n\n1. **Asia:**\n   - Total Revenue: $222,300.\n   - Country: Vietnam.\n   - Total Profit: $93,450.\n   - ..."
+  },
+  {
+    "id": "Demo-03",
+    "category": "13. Demo Questions",
+    "question": "Who are our top 5 customers?",
+    "elapsed": 13.09,
+    "passed": true,
+    "chart_data_present": true,
+    "answer_snippet": "Here are our top 5 customers by total revenue:\n\n1. **Stark Traders:**\n   - Segment: Enterprise.\n   - Region: Asia.\n   - Total Revenue: $122,850.\n   - ..."
+  },
+  {
+    "id": "Demo-04",
+    "category": "13. Demo Questions",
+    "question": "Give me insights about sales performance.",
+    "elapsed": 10.96,
+    "passed": true,
+    "chart_data_present": false,
+    "answer_snippet": "Here are the insights regarding sales performance:\n\n- **Total Revenue:** $379,995.00\n- **Total Profit:** $161,440.00\n- **Profit Margin:** 42.48%\n- **T..."
+  },
+  {
+    "id": "Demo-05",
+    "category": "13. Demo Questions",
+    "question": "Compare revenue by region.",
+    "elapsed": 8.94,
+    "passed": true,
+    "chart_data_present": true,
+    "answer_snippet": "Here is the revenue comparison by region:\n\n1. **Asia:**\n   - Total Revenue: $222,300.\n   - Total Profit: $93,450.\n   - Customer Count: 3.\n   - Order C..."
+  },
+  {
+    "id": "Demo-06",
+    "category": "13. Demo Questions",
+    "question": "Suggest actions to improve sales.",
+    "elapsed": 4.96,
+    "passed": true,
+    "chart_data_present": false,
+    "answer_snippet": "I can only help with business data analysis using the available database tools. If you have specific data or metrics you'd like to analyze, please let..."
+  },
+  {
+    "id": "Demo-07",
+    "category": "13. Demo Questions",
+    "question": "Which product should we promote next month?",
+    "elapsed": 5.92,
+    "passed": true,
+    "chart_data_present": false,
+    "answer_snippet": "I can only help with business data analysis using the available database tools."
+  },
+  {
+    "id": "Demo-08",
+    "category": "13. Demo Questions",
+    "question": "Explain how customer spending is calculated.",
+    "elapsed": 10.75,
+    "passed": true,
+    "chart_data_present": false,
+    "answer_snippet": "Customer spending is typically calculated using the following metrics:\n\n1. **Revenue**: This is calculated as the total sales revenue, which can be ex..."
+  },
+  {
+    "id": "Demo-09",
+    "category": "13. Demo Questions",
+    "question": "Show a revenue trend chart.",
+    "elapsed": 6.04,
+    "passed": true,
+    "chart_data_present": false,
+    "answer_snippet": "I can provide you with the revenue trend data over time, but I cannot create a chart directly. Would you like the trend data bucketed by day, month, o..."
+  },
+  {
+    "id": "Demo-10",
+    "category": "13. Demo Questions",
+    "question": "Why do you think the North region is outperforming others?",
+    "elapsed": 5.94,
+    "passed": true,
+    "chart_data_present": false,
+    "answer_snippet": "I can only help with business data analysis using the available database tools. If you would like to analyze the performance of the North region compa..."
+  }
+]

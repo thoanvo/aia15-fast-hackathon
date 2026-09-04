@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+
+# LangChain FAISS index (rebuilt from src/embedding/, see langchain_app/vectorstore/store.py)
+src/langchain_app/vectorstore/index/
+
+.pytest_cache/
+.streamlit/
+
+# Runtime logs (e.g. logs/debug.log captured while running dev_fake_backend.py/app.py)
+logs/
+src/tts_models/
